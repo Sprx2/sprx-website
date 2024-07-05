@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <img src="images/candy-land.png" alt="Sprinkles Logo" style="width:200px;height:auto;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprinkles (SPRK) - Your Future Sweet Reward</title>
-    <img src="images/sprinkle-char.png" alt="Sprinkles Logo" style="width:200px;height:auto;">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,10 +13,24 @@
             color: #333;
         }
         header {
-            background-color: #ff69b4;
-            color: white;
-            padding: 1rem 0;
+            position: relative;
             text-align: center;
+            color: white;
+        }
+        .banner {
+            width: 100%;
+            height: 200px;
+            background-image: url('path/to/your/banner-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top: 150px; /* Adjust this value based on your logo size and banner height */
+            left: 50%;
+            transform: translateX(-50%);
         }
         .container {
             width: 80%;
@@ -48,6 +60,8 @@
 </head>
 <body>
     <header>
+        <div class="banner"></div>
+        <img src="path/to/your/logo-image.png" alt="Sprinkles Logo" class="logo">
         <h1>Sprinkles (SPRK)</h1>
         <p>Your Future Sweet Reward in the Crypto Universe</p>
     </header>
